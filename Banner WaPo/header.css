@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+
+p {
+    font-family: "FranklinITCProLight", Helvetica, sans-serif;
+}
+
+img {
+    border-radius: 50%;
+  }
+
+.header {
+    background-image: linear-gradient(to bottom,#eee, #fff);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section {
+    color: #1955a5;
+    padding-top: 20px;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #2a2a2a;
+}
+
+.date {
+    color: #A94442;
+    font-size: 17px;
+}
+
+.text {
+    color: #5a5a5a;
+    padding-left: 360px;
+    padding-right: 360px;
+    font-size: 21px;
+}
