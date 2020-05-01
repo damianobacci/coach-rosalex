@@ -1,4 +1,4 @@
-# Coach Rosalex Excercises and Projects to become the Ultimate Full Stack Developer
+# Coach Rosalex Exercises and Projects to become the Ultimate Full Stack Developer
 
 ## HTML and CSS
 
