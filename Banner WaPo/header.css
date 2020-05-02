@@ -43,6 +43,10 @@ body {
     line-height: 1.4em;
 }
 
+.count {
+    margin-top: 5px;
+}
+
 #promises {
     padding-top: 1.1em;
 }
@@ -60,41 +64,59 @@ body {
     font-size: 25px;
     color: white;
     padding-top: 35px;
-    padding-bottom: 5px;    
+    padding-bottom: 5px;
+    max-width: 400px; 
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 #main-promises .count {
     font-size: 35px;
-    color: black;    
+    color: black; 
 }
 
 #kept {
     background-color: #00b6bd;
     border-radius: 5px;
+    padding: 3px;
 }
 
+#promise-kept {
+    float: left;
+    width: 50%;
+}
+
+#promise-broken {
+    float: right;
+    width: 50%;
+}
 #broken {
     background-color: red;
     border-radius: 5px;
+    padding: 3px;
 }
 
 #launched {
     background-color: #ebe08c;
     border-radius: 3px;
+    padding: 3px;
 }
 
 #stuck {
     background-color: #808284;
     border-radius: 3px;
     color: white;
+    padding: 3px;
 }
 
 #compromise {
     background-color: #fcc691;
     border-radius: 3px;
+    padding: 3px;
 }
 
 #not-rated {
     background-color: #d1d2cd;
     border-radius: 3px;
+    padding: 3px;
 }
