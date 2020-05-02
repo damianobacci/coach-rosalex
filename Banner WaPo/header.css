@@ -42,3 +42,59 @@ body {
     padding-top: 1.1em;
     line-height: 1.4em;
 }
+
+#promises {
+    padding-top: 1.1em;
+}
+
+#promises-details {
+    padding-top: 1.1em;
+}
+
+#promises-details .count {
+    font-size: 25px;
+    color: black;  
+}
+
+#main-promises {
+    font-size: 25px;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 5px;    
+}
+
+#main-promises .count {
+    font-size: 35px;
+    color: black;    
+}
+
+#kept {
+    background-color: #00b6bd;
+    border-radius: 5px;
+}
+
+#broken {
+    background-color: red;
+    border-radius: 5px;
+}
+
+#launched {
+    background-color: #ebe08c;
+    border-radius: 3px;
+}
+
+#stuck {
+    background-color: #808284;
+    border-radius: 3px;
+    color: white;
+}
+
+#compromise {
+    background-color: #fcc691;
+    border-radius: 3px;
+}
+
+#not-rated {
+    background-color: #d1d2cd;
+    border-radius: 3px;
+}
