@@ -43,59 +43,6 @@ body {
     line-height: 1.4em;
 }
 
-.count {
-    margin-top: 5px;
-}
-
-#promises {
-    padding-top: 1.1em;
-}
-
-#promises-details {
-    padding-top: 1.1em;
-}
-
-#promises-details .count {
-    font-size: 25px;
-    color: black;  
-}
-
-#main-promises {
-    font-size: 25px;
-    color: white;
-    padding-top: 35px;
-    padding-bottom: 5px;
-    max-width: 400px; 
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-#main-promises .count {
-    font-size: 35px;
-    color: black; 
-}
-
-#kept {
-    background-color: #00b6bd;
-    border-radius: 5px;
-    padding: 3px;
-}
-
-#promise-kept {
-    float: left;
-    width: 50%;
-}
-
-#promise-broken {
-    float: right;
-    width: 50%;
-}
-#broken {
-    background-color: red;
-    border-radius: 5px;
-    padding: 3px;
-}
-
 #launched {
     background-color: #ebe08c;
     border-radius: 3px;
@@ -119,4 +66,42 @@ body {
     background-color: #d1d2cd;
     border-radius: 3px;
     padding: 3px;
+}
+
+.box {
+    width: 12%;
+    display: inline-block;
+    margin: auto;
+    max
+}
+
+#kept {
+    background-color: #00b6bd;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+
+#broken {
+    background-color: red;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+
+#main {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#main .count {
+    font-size: 30px;
+}
+
+#other .count {
+    font-size: 25px;
+}
+
+.box p {
+    margin-top: 10px;
 }
