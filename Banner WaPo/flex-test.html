@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    text-align: center;
+}
+.container {
+    display: flex;
+    padding: 0,5rem;
+    justify-content: center;
+}
+.box {
+    margin: 1rem;
+}
+
+#launched {
+    background-color: #ebe08c;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#stuck {
+    background-color: #808284;
+    border-radius: 3px;
+    color: white;
+    padding: 3px;
+}
+
+#compromise {
+    background-color: #fcc691;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#not-rated {
+    background-color: #d1d2cd;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#kept {
+    background-color: #00b6bd;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+
+#broken {
+    background-color: red;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+
+#main .count {
+    font-size: 30px;
+}
+
+#other .count {
+    font-size: 25px;
+}
+</style>
+<body>
+    <div class="container"><div class="box">
+        <h3 id="kept">Promises Kept</h3>
+        <p class="count">21</p>
+    </div> 
+    <div class="box">
+        <h3 id="broken">Promises Broken</h3>
+        <p class="count">25</p>
+    </div>
+</div>
+<div class="container">
+    <div class="box">
+        <h3 id="launched">Launched</h3>
+        <p class="count">7</p>
+    </div>
+    <div class="box">
+        <h3 id="stuck">Stuck</h3>
+        <p class="count">0</p>
+    </div>
+    <div class="box">
+        <h3 id="compromise">Compromise</h3>
+        <p class="count">7</p>
+    </div>
+    <div class="box">
+        <h3 id="not-rated">Not Yet Rated</h3>
+        <p class="count">0</p>
+    </div>
+</div>
+</body>
+</html>
