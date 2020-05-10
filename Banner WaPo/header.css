@@ -43,10 +43,25 @@ body {
     line-height: 1.4em;
 }
 
+.container {
+    display: flex;
+    padding-top: 0,5rem;
+    justify-content: center;
+}
+
+.first {
+    padding-top: 30px;
+}
+
+.box {
+    margin: 1rem;
+}
+
 #launched {
     background-color: #ebe08c;
     border-radius: 3px;
     padding: 3px;
+    margin-bottom: 8px;
 }
 
 #stuck {
@@ -54,25 +69,21 @@ body {
     border-radius: 3px;
     color: white;
     padding: 3px;
+    margin-bottom: 8px;
 }
 
 #compromise {
     background-color: #fcc691;
     border-radius: 3px;
     padding: 3px;
+    margin-bottom: 8px;
 }
 
 #not-rated {
     background-color: #d1d2cd;
     border-radius: 3px;
     padding: 3px;
-}
-
-.box {
-    width: 12%;
-    display: inline-block;
-    margin: auto;
-    max
+    margin-bottom: 8px;
 }
 
 #kept {
@@ -80,6 +91,7 @@ body {
     border-radius: 5px;
     padding: 3px;
     color: white;
+    margin-bottom: 8px;
 }
 
 #broken {
@@ -87,21 +99,17 @@ body {
     border-radius: 5px;
     padding: 3px;
     color: white;
+    margin-bottom: 8px;
 }
 
-#main {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-#main .count {
+.first .count {
     font-size: 30px;
 }
 
-#other .count {
+.second .count {
     font-size: 25px;
 }
 
-.box p {
-    margin-top: 10px;
+.first h3 {
+    font-size: 21px;
 }
