@@ -1,6 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 
 body {
-    background-color: lightgrey;
+    background-color:#E6EFF6;
     font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+#first {
+    background-color: white;
+}
+
+#first h1 {
+    color: #2BB3B1;
+}
+
+#second {
+    background-color: #2BB3B1;
+}
+
+#third {
+    background-color: #4ABEBD;
+}
+
+#second, #third {
+    color: white;
+}
+
+#claim {
+    color: #BFDF32;
 }
