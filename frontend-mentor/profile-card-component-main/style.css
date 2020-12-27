@@ -2,6 +2,16 @@ body {
     background-color: darkcyan;
 }
 
-section {
+#container {
     display: flex;
+    justify-items: center;
+    align-items: center ;
+}
+
+#third {
+    display: flex;
+}
+
+#followers, #likes, #photos {
+    flex: 1;
 }
