@@ -5,15 +5,20 @@ body {
     background-color:#E6EFF6;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    margin-left: 31rem;
+    margin-right: 31rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 22px;
+}
+
+#section {
+    display: flex;
 }
 
 #first {
     background-color: white;
-    padding: 2%;
+    padding: 2.3rem;
 }
 
 #first h1 {
@@ -22,19 +27,53 @@ body {
 
 #second {
     background-color: #2BB3B1;
-    padding: 2%;
+    padding: 2.5rem;
 }
 
 #third {
     background-color: #4ABEBD;
-    padding: 2%; 
+    padding: 2.5rem; 
 }
 
 #second, #third {
     color: white;
+    flex: 1;
 }
 
 #claim {
     color: #BFDF32;
     font-size: 20px;
+}
+
+.btn {
+    color: white;
+    background: #BFDF32;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: underline;
+    background: #b6d42e;
+}
+
+#light {
+    color: hsl(204, 43%, 93%)
+}
+
+#price {
+    font-size: 2rem;
+}
+
+#access {
+    color: hsl(218, 22%, 67%);
+    font-size: 18px;
+    line-height: 30px;
 }
