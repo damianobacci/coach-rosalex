@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+figure img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "centuryExpanded";
+  src: url("../dist/Century-Expanded-Regular.ttf");
+}
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  2% {
+    transform: rotate(5deg);
+  }
+  5% {
+    transform: rotate(0deg);
+  }
+  7% {
+    transform: rotate(5deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+}
+body {
+  background-color: #222222;
+  font-family: "centuryExpanded";
+}
+
+.hero {
+  background: #222222;
+  font-size: 3vh;
+  color: #f2f2f2;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/d/d3/Bill_russell_dribbling_%28cropped%29.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__banner {
+  margin-top: 60vh;
+  margin-left: 5vh;
+}
+
+.hero h1 {
+  font-size: 2em;
+  text-align: left;
+}
+
+.hero h2 {
+  text-align: left;
+}
+
+.textblock {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  margin: 5vh;
+}
+
+.separator {
+  max-width: 15%;
+  height: auto;
+  filter: invert(100%) sepia(1%) saturate(48%) hue-rotate(264deg) brightness(110%) contrast(90%);
+  display: block;
+  margin: auto;
+  margin-top: 3vh;
+}
+
+.notes {
+  margin: 5vh;
+}
+.notes img {
+  width: 80%;
+  border: 2px solid white;
+  rotate: -8deg;
+  z-index: 1;
+  /* animation: tilt-shaking 5s infinite; */
+}
+.notes img:hover {
+  rotate: y 180deg;
+  transition: 1s ease-in-out;
+  border: 0.25em dotted;
+  animation: none;
+}
+.notes p {
+  color: #f2f2f2;
+  position: relative;
+  border: 2px solid white;
+  padding: 2vh;
+  z-index: 2;
+  background-color: #222222;
+}
+
+.postcard {
+  margin: 5vh 0 5vh 10vh;
+}
+.postcard img {
+  width: 80%;
+  border: 2px solid white;
+  rotate: 8deg;
+  z-index: 1;
+  perspective: 1000px;
+  /* animation: tilt-shaking 5s infinite; */
+}/*# sourceMappingURL=main.css.map */
