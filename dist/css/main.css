@@ -37,6 +37,10 @@ body {
   background: linear-gradient(rgb(0, 69, 158), rgb(0, 69, 158));
   padding: 1rem;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .view {

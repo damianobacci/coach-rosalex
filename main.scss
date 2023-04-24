@@ -8,9 +8,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 1em;
     display: grid;
-    gap: 1rem;
-    
-} 
+    gap: 1rem; 
+}
 
 .hero {
     display: flex;
@@ -35,6 +34,10 @@ body {
     background: linear-gradient(rgba(0, 69, 158, 100), rgba(0, 69, 158, 1)) ;
     padding: 1rem;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 
