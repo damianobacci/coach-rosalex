@@ -29,8 +29,9 @@ body {
 .info {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
 }
 
 .preview-image img {
@@ -43,11 +44,18 @@ body {
 }
 
 .button {
-    background-color: green;
+    background-color: #3d8168;
     height: 6vh;
     color:white;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #184c3af9;
 }
 
 .cart-icon { /* New style for the cart icon */
