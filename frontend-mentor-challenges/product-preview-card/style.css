@@ -1,0 +1,26 @@
+body {
+    box-sizing: border-box;
+}
+
+.attribution { 
+    margin-top: 4em;
+    font-size: 11px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    outline: solid 2px black;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.preview-image {
+    max-width:100%;
+    width:100%;
+}
