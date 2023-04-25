@@ -1,5 +1,7 @@
 body {
     box-sizing: border-box;
+    background-color: #f3eae3;
+    padding: 10px;
 }
 
 .attribution { 
@@ -13,14 +15,42 @@ body {
 .card {
     display: flex;
     flex-direction: column;
+    background-color: white;
     align-items: flex-start;
-    outline: solid 2px black;
-    border-radius: 6px;
+    border-radius: 10px;
     overflow: hidden;
     width: 100%;
 }
 
 .preview-image {
-    max-width:100%;
-    width:100%;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.preview-image img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.button {
+    background-color: green;
+    height: 6vh;
+    color:white;
+    display: inline-block;
+    text-align: center;
+}
+
+.cart-icon { /* New style for the cart icon */
+    display: inline-block;
+    margin-right: 0.5em; /* Adjust the space between the icon and text */
 }
