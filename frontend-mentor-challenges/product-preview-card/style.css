@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    background-color: #f3eae3;
+    background-color: hsl(30, 38%, 92%);
     padding: 10px;
 }
 
@@ -39,12 +39,8 @@ body {
     height: auto;
 }
 
-.title {
-    font-weight: 600;
-}
-
 .button {
-    background-color: #3d8168;
+    background-color: hsl(158, 36%, 37%);
     height: 6vh;
     color:white;
     display: flex;
@@ -52,6 +48,7 @@ body {
     justify-content: center;
     text-decoration: none;
     border-radius: 6px;
+    font-family: 'Fraunces', serif;
 }
 
 .button:hover {
@@ -61,4 +58,25 @@ body {
 .cart-icon { /* New style for the cart icon */
     display: inline-block;
     margin-right: 0.5em; /* Adjust the space between the icon and text */
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: grey;
+}
+
+.title {
+    font-weight: 600;
+    font-family: 'Fraunces', serif;
+
+}
+
+.category {
+    font-family: 'Montserrat', sans-serif;
 }
