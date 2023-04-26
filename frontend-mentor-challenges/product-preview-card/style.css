@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    align-items: flex-start;
+    align-items: center;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
@@ -48,7 +48,8 @@ body {
     justify-content: center;
     text-decoration: none;
     border-radius: 6px;
-    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .button:hover {
@@ -63,12 +64,23 @@ body {
 .price {
     color: hsl(158, 36%, 37%);
     font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+
+.price .discount {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: grey;
+    font-size: 13px;
+    text-decoration: line-through;
 }
 
 .description {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: grey;
+    line-height: 23px;
+    font-size: 14px;
 }
 
 .title {
@@ -79,4 +91,8 @@ body {
 
 .category {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: grey;
+    font-size: 12px;
+    letter-spacing: 4px;
 }
