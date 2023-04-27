@@ -36,10 +36,6 @@ h1 {
     object-position: 0% 68%;
 }
 
-.card h2 {
-    color: #white;
-}
-
 .card:hover {
     transform: scale(1.05);
     background-color: white;
