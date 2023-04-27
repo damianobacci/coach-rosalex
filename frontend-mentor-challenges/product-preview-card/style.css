@@ -12,6 +12,11 @@ body {
     color: hsl(228, 45%, 44%); 
 }
 
+.instructions {
+    margin-bottom: 4em;
+    font-size: 16px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -23,7 +28,13 @@ body {
 }
 
 .preview-image {
-    width: 100%;
+    width: 100%; 
+    padding-bottom: 70%; 
+    background-image: url(/frontend-mentor-challenges/product-preview-card/images/image-product-mobile.jpg);
+    background-size: 100% auto; 
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative; 
 }
 
 .info {
@@ -34,10 +45,6 @@ body {
     padding-bottom: 10px;
 }
 
-.preview-image img {
-    width: 100%;
-    height: auto;
-}
 
 .button {
     background-color: hsl(158, 36%, 37%);
@@ -102,4 +109,44 @@ body {
     font-size: 12px;
     letter-spacing: 5px;
     padding-top: 1em;
+}
+
+@media (min-width: 1440px) {
+    body {
+        padding: 3% 30%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .preview-image {
+        flex: 1;
+        background-image: url(/frontend-mentor-challenges/product-preview-card/images/image-product-desktop.jpg);
+    }
+
+    .info {
+        flex: 1;
+    }
+
+    .button {
+        height: 5vh;
+    }
+
+    .instructions {
+        margin-bottom: 4em;
+        font-size: 16px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+
+    .instructions::before {
+        content: "💡";
+        margin-right: 1em;
+    }
+
+    .instructions a { 
+        color: hsl(228, 45%, 44%); 
+    }
 }
