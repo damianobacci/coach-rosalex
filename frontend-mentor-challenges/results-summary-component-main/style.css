@@ -5,7 +5,7 @@
 }
 
 .result {
-  background-color: hsl(241, 81%, 54%);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   text-align: center;
@@ -27,6 +27,22 @@
 
 .summary div {
   margin-top: 1rem;
+}
+
+.reaction {
+  background: hsl(0, 100%, 67%, 0.2);
+}
+
+.memory {
+  background: hsl(39, 100%, 56%, 0.2);
+}
+
+.verbal {
+  background: hsl(166, 100%, 37%, 0.2);
+}
+
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.2);
 }
 
 .attribution {
