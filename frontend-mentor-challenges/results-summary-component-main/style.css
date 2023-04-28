@@ -10,10 +10,23 @@
   border-bottom-right-radius: 30px;
   text-align: center;
   padding: 1rem 3rem;
+  color: white;
+}
+
+.number {
+  display: block;
+}
+
+.result div {
+  margin-top: 1rem;
 }
 
 .summary {
   padding: 1rem 2rem;
+}
+
+.summary div {
+  margin-top: 1rem;
 }
 
 .attribution {
