@@ -31,18 +31,26 @@
 
 .reaction {
   background: hsl(0, 100%, 67%, 0.2);
+  border-radius: 5px;
+  padding: 10px 5px;
 }
 
 .memory {
   background: hsl(39, 100%, 56%, 0.2);
+  border-radius: 5px;
+  padding: 10px 5px;
 }
 
 .verbal {
   background: hsl(166, 100%, 37%, 0.2);
+  border-radius: 5px;
+  padding: 10px 5px;
 }
 
 .visual {
   background-color: hsl(234, 85%, 45%, 0.2);
+  border-radius: 5px;
+  padding: 10px 5px;
 }
 
 .attribution {
