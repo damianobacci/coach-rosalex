@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+.result {
+  background-color: hsl(241, 81%, 54%);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  padding: 1rem 3rem;
+}
+
+.summary {
+  padding: 1rem 2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
