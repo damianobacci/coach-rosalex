@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  place-items: center;
+}
+
+.card {
+  outline: 1px solid darkblue;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #00459e;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 280px;
+  height: 200px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 0% 68%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: #00459e;
+  transition: 0.3s;
+}
