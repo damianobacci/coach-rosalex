@@ -3,17 +3,28 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #222;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .grid {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-  margin: 16rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 15rem 5rem;
+  gap: 2em;
 }
 
 .key {
   border: solid #fff 2px;
   padding: 2rem;
   color: #fff;
+  transition: 0.07s;
+}
+
+.key:hover {
+  border: solid #222 2px;
+  padding: 2rem;
+  color: #222;
+  background-color: #fff;
+  transform: scale(1.5);
 }
