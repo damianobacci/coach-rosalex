@@ -17,12 +17,13 @@
   display: inline-block;
   border: solid 1px black;
   border-radius: 50%;
-  padding: 2.5rem;
+  padding: 2.8rem 3.5rem;
 }
 
 .number {
   display: block;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .result div {
