@@ -6,6 +6,20 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+a {
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+p {
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
 .grid {
   display: grid;
   place-items: center;
