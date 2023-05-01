@@ -21,7 +21,7 @@
   transition: 0.07s;
 }
 
-.key:hover {
+.playing {
   border: solid #222 2px;
   padding: 2rem;
   color: #222;
