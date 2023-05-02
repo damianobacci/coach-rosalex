@@ -12,22 +12,25 @@
   text-align: center;
   padding: 1rem 3rem;
   color: white;
+  padding-bottom: 30px;
 }
 
 .score {
   display: inline-block;
   border-radius: 50%;
-  padding: 2rem 3rem;
+  padding: 2rem 2.4rem;
   margin: 1rem 0;
   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  line-height: 40px;
 }
 
 .number {
   display: block;
   font-weight: 800;
   font-size: 4rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   color: white;
+  padding-top: 10px;
 }
 
 .result .ranking {
@@ -45,6 +48,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-size: 16px;
 }
 
 .summary a {
@@ -58,37 +62,65 @@
 }
 
 .reaction {
-  background: hsl(0, 100%, 67%, 0.2);
+  background: hsla(0, 100%, 67%, 0.099);
   border-radius: 5px;
-  padding: 10px 5px;
+  padding: 15px 5px;
   display: flex;
   justify-content: space-between;
+}
+
+.reaction .right {
+  color: hsl(0, 100%, 67%);
+  font-weight: 800;
 }
 
 .memory {
-  background: hsl(39, 100%, 56%, 0.2);
+  background: hsl(39, 100%, 56%, 0.1);
   border-radius: 5px;
-  padding: 10px 5px;
+  padding: 15px 5px;
   display: flex;
   justify-content: space-between;
+}
+
+.memory .right {
+  color: hsl(39, 100%, 56%);
+  font-weight: 800;
 }
 
 .verbal {
-  background: hsl(166, 100%, 37%, 0.2);
+  background: hsl(166, 100%, 37%, 0.1);
   border-radius: 5px;
-  padding: 10px 5px;
+  padding: 15px 5px;
   display: flex;
   justify-content: space-between;
+}
+
+.verbal .right {
+  color: hsl(166, 100%, 37%);
+  font-weight: 800;
 }
 
 .visual {
-  background-color: hsl(234, 85%, 45%, 0.2);
+  background-color: hsl(234, 85%, 45%, 0.1);
   border-radius: 5px;
-  padding: 10px 5px;
+  padding: 15px 5px;
   display: flex;
   justify-content: space-between;
 }
 
+.visual .right {
+  color: hsl(234, 85%, 45%);
+  font-weight: 800;
+}
+
+.right img {
+  vertical-align: text-bottom;
+  margin: 0 0.4em;
+}
+
+.left {
+  margin-right: 0.7em;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
