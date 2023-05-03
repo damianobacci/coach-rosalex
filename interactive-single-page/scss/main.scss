@@ -90,7 +90,6 @@ body {
     rotate: y 180deg;
     transition: 1s ease-in-out;
     border: 0.25em dotted;
-    animation: none;
   }
 
   p {
@@ -112,6 +111,5 @@ body {
     rotate: 8deg;
     z-index: 1;
     perspective: 1000px;
-    animation: tilt-shaking 5s infinite;
   }
 }
