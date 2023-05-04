@@ -5,7 +5,7 @@
 }
 
 .rating {
-  border: 2px solid black;
+  background-color: hsl(217, 12%, 63%);
   margin: 1rem;
   padding: 1rem;
 }
@@ -13,13 +13,17 @@
 .rating img {
   display: block;
   margin-bottom: 1rem;
-  border: 1px solid black;
+  background-color: hsl(213, 19%, 18%);
   padding: 1rem;
   border-radius: 50%;
 }
 
 .rating h1 {
   margin-bottom: 1rem;
+}
+
+.rating p {
+  background-color: hsl(216, 12%, 54%);
 }
 
 .rating ul {
@@ -33,7 +37,8 @@
 .rating li {
   width: 40px;
   height: 40px;
-  border: 2px solid black;
+  color: white;
+  background-color: hsl(217, 12%, 63%);
   padding: 10px;
   text-align: center;
   border-radius: 50%;
