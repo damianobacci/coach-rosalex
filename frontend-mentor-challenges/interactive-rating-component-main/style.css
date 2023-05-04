@@ -6,17 +6,47 @@
 
 .rating {
   border: 2px solid black;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .rating img {
   display: block;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.rating h1 {
+  margin-bottom: 1rem;
 }
 
 .rating ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.rating li {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.rating a {
+  margin-top: 1rem;
+  display: block;
+  color: #fff;
+  background-color: hsl(25, 97%, 53%);
+  text-align: center;
+  border-radius: 30px;
+  padding: 1rem 0;
 }
 
 .attribution {
