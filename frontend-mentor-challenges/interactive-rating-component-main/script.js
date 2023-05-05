@@ -29,6 +29,7 @@ function success() {
   let rating_screen = document.querySelectorAll(".rating");
   success_screen[0].style.display = "block";
   rating_screen[0].style.display = "none";
+  result.innerHTML = selectedValue;
 }
 
 let link = document.querySelectorAll("a");
