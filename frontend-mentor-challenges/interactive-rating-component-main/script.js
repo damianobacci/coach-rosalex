@@ -26,7 +26,9 @@ function singleSelect(li) {
 
 function success() {
   let success_screen = document.querySelectorAll(".thanks");
-  success_screen.classList.add(".display");
+  let rating_screen = document.querySelectorAll(".rating");
+  success_screen[0].style.display = "block";
+  rating_screen[0].style.display = "none";
 }
 
 let link = document.querySelectorAll("a");
