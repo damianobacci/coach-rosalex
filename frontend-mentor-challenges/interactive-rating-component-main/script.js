@@ -2,7 +2,6 @@ let selectedValue;
 
 ul.onclick = function (event) {
   if (event.target.tagName != "LI") return;
-
   if (event.ctrlKey || event.metaKey) {
     singleSelect(event.target);
   } else {
