@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.title {
+  margin: 1rem;
+}
+
+.subtitle {
+  margin: 1rem;
+}
+
+.list {
+  display: grid;
+  margin: 1rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  list-style-type: none;
+}
+
+.stuff {
+  border: 2px solid black;
+}
+
+li img {
+  width: 100%;
+}
+
+.description {
+  margin: 1rem 8px;
+}
