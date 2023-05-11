@@ -15,18 +15,18 @@ body {
 }
 
 .title {
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .subtitle {
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .list {
   display: grid;
   margin: 2rem;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   list-style-type: none;
 }
 
