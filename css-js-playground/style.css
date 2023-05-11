@@ -39,6 +39,7 @@ body {
   background-color: white;
   color: #00459e;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .title {
