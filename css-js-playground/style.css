@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+a:any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #00459e;
+  color: white;
+}
+
 .title {
   margin: 1rem;
 }
@@ -14,20 +24,35 @@
 
 .list {
   display: grid;
-  margin: 1rem;
+  margin: 2rem;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   list-style-type: none;
 }
 
 .stuff {
-  border: 2px solid black;
+  border: 3px solid white;
+  border-radius: 15px;
 }
 
-li img {
-  width: 100%;
+.stuff:hover {
+  background-color: white;
+  color: #00459e;
+  cursor: pointer;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-family: "Quattrocento", serif;
+  font-size: 2rem;
 }
 
 .description {
-  margin: 1rem 8px;
+  padding: 1rem 0;
+  font-family: "Quattrocento", serif;
+  text-align: center;
 }
