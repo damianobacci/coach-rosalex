@@ -27,7 +27,7 @@
 }
 
 .rating p {
-  color: #656b75;
+  color: white;
   font-size: 15px;
   font-weight: 400;
 }
@@ -103,6 +103,7 @@
 .thanks p {
   font-size: 15px;
   font-weight: 400;
+  color: white;
 }
 
 .score {
@@ -111,4 +112,7 @@
   background-color: #656b75;
   margin: 1rem 4rem;
   padding: 5px 0;
+}
+
+@media screen {
 }
