@@ -9,7 +9,6 @@ function drawClock() {
 
   let secondsDegree = (seconds * 360) / 60 + 90;
   secondHand.style.transform = `rotate(${secondsDegree}deg)`;
-  console.log(seconds);
 }
 
 setInterval(drawClock, 1000);
