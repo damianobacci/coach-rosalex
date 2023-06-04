@@ -1,9 +1,15 @@
 let inputs = document.querySelectorAll("input");
+let body = document.body;
 
-function consoleLogging(e) {
-  console.log(e.target.value);
+function updateDoc() {
+  let suffix = this.dataset.sizing || "";
+  document.documentElement.style.setProperty(
+    `--${this.name}`,
+    this.value + suffix
+  );
 }
 
 inputs.forEach((element) => {
-  element.addEventListener("change", consoleLogging);
+  element.addEventListener("change", updateDoc);
+  element.addEventListener("mousemove", updateDoc);
 });

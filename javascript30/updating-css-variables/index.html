@@ -11,9 +11,19 @@
     <h1 class="title">Updating CSS variables with JS</h1>
   </body>
   <p class="inputs">
-    Spacing <input type="range" name="" id="" min="10" max="120" /> Blur
-    <input type="range" name="" id="" min="10" max="120" /> Color
-    <input type="color" name="" id="" />
+    Spacing
+    <input
+      type="range"
+      name="spacing"
+      id=""
+      min="10"
+      max="120"
+      data-sizing="px"
+    />
+    Blur
+    <input type="range" name="blur" id="" min="0" max="10" data-sizing="px" />
+    Color
+    <input type="color" name="base" id="" />
   </p>
   <img src="https://placehold.co/600x400" alt="" srcset="" />
   <script src="script.js"></script>
