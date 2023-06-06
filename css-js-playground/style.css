@@ -57,3 +57,23 @@ body {
   font-family: "Quattrocento", serif;
   text-align: center;
 }
+
+.code {
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+button {
+  border-radius: 10px;
+  margin: 2rem;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #00459e;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
