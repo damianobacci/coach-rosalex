@@ -77,3 +77,7 @@ button:hover {
   border: 2px solid white;
   cursor: pointer;
 }
+
+li {
+  list-style-type: none;
+}
