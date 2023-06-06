@@ -43,3 +43,17 @@ h1 {
   color: #00459e;
   transition: 0.3s;
 }
+
+button {
+  border-radius: 10px;
+  margin: 2rem;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #00459e;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
