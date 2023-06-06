@@ -29,6 +29,13 @@
       button.
     </div>
     <button onclick="location.href='../index.html'">🔙 Go back</button>
-    <script src="script.js"></script>
+    <script>
+      let text = document.getElementById("text");
+      let button = document.querySelector("button");
+      let button2 = document.querySelectorAll("button")[1];
+
+      button.addEventListener("click", () => (text.style.display = "none"));
+      button2.addEventListener("click", () => (text.style.display = "block"));
+    </script>
   </body>
 </html>
