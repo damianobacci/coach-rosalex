@@ -5,50 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Quattrocento&display=swap"
       rel="stylesheet"
     />
-    <style>
-      #field {
-        width: 300px;
-        height: 150px;
-        border: 10px solid black;
-        background-color: #00ff00;
-        overflow: hidden;
-        margin: 1rem 2rem 0 2rem;
-        color: black;
-        position: relative;
-      }
-
-      #ball {
-        transition: all 1s;
-      }
-
-      #basket-field {
-        width: 400px;
-        height: 250px;
-        border: 10px solid white;
-        background-color: #f88158;
-        overflow: hidden;
-        margin: 1rem 2rem 0 2rem;
-      }
-
-      #danger {
-        display: none;
-        color: yellow;
-        font-weight: 700;
-        animation: blink-animation 2s steps(5, start) infinite;
-      }
-
-      @keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
-      }
-    </style>
     <title>⚽ Move ball across the field</title>
   </head>
   <body>
@@ -84,33 +47,6 @@
     <br />
     <br />
     <button onclick="location.href='../index.html'">🔙 Go back</button>
-    <script>
-      const ball = document.querySelector("img");
-      const field = document.getElementById("field");
-      document.body.addEventListener("click", function (event) {
-        if (field.contains(event.target)) {
-          const fieldData = field.getBoundingClientRect();
-          let ballLeft =
-            event.clientX - fieldData.left - ball.offsetWidth / 2 - 10;
-          let ballTop =
-            event.clientY - fieldData.top - ball.offsetHeight / 2 - 10;
-          if (ballLeft < 0) ballLeft = 0;
-          if (ballTop < 0) ballTop = 0;
-          if (ballLeft + ball.clientWidth > field.clientWidth) {
-            ballLeft = field.clientWidth - ball.clientWidth;
-          }
-          if (ballTop + ball.clientHeight > field.clientHeight) {
-            ballTop = field.clientHeight - ball.clientHeight;
-          }
-          ball.style.position = "relative";
-          ball.style.left = `${ballLeft}px`;
-          ball.style.top = `${ballTop}px`;
-          danger.style.display = "none";
-        } else {
-          let danger = document.getElementById("danger");
-          danger.style.display = "inline";
-        }
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

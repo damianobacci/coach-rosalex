@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Quattrocento&display=swap"
+      rel="stylesheet"
+    />
+    <title>⬇️ Create a sliding menu</title>
+  </head>
+  <body>
+    <h1 class="title">⬇️ Sliding menu</h1>
+    <p class="subtitle">Create a menu that opens/collapses on click:</p>
+
+    <div class="subtitle" id="menu">
+      <span id="title">▶▼ Sweeties (click me)!</span>
+      <ul>
+        <li>- Cake</li>
+        <li>- Donut</li>
+        <li>- Honey</li>
+      </ul>
+    </div>
+    <button onclick="location.href='../index.html'">🔙 Go back</button>
+    <script>
+      const handler = document.getElementById("handler");
+      const closed = document.getElementById("closed");
+      const open = document.getElementById("open");
+      const menu = document.getElementById("menu");
+      function menuHandler() {}
+      handler.addEventListener("click");
+    </script>
+  </body>
+</html>
