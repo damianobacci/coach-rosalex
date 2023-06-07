@@ -20,6 +20,33 @@
         overflow: hidden;
         margin: 1rem 2rem 0 2rem;
         color: black;
+        position: relative;
+      }
+
+      #ball {
+        transition: all 1s;
+      }
+
+      #basket-field {
+        width: 400px;
+        height: 250px;
+        border: 10px solid white;
+        background-color: #f88158;
+        overflow: hidden;
+        margin: 1rem 2rem 0 2rem;
+      }
+
+      #danger {
+        display: none;
+        color: yellow;
+        font-weight: 700;
+        animation: blink-animation 2s steps(5, start) infinite;
+      }
+
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
       }
     </style>
     <title>⚽ Move ball across the field</title>
@@ -31,7 +58,7 @@
     <ul class="subtitle">
       <li>
         - Ball center should come exactly under the pointer on click (if
-        possible without crossing the field edge)
+        possible without crossing the field edge).
       </li>
       <li>- CSS-animation is welcome.</li>
       <li>- The ball must not cross field boundaries.</li>
@@ -42,27 +69,46 @@
       bound to any fixed values. Use properties event.clientX/event.clientY for
       click coordinates.
     </p>
+    <p class="subtitle">
+      Click on the field below:
+      <span id="danger">(you must click on the field!)</span>
+    </p>
     <div id="field">
-      <img src="https://en.js.cx/clipart/ball.svg" id="ball" /> . . . . . . . .
-      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-      . . . . . . . . . . . . . . . . . . . . .
+      <img src="https://en.js.cx/clipart/ball.svg" id="ball" />
     </div>
+    <p class="subtitle">Different field with different CSS animation:</p>
+    <div id="basket-field">
+      <img src="./basket.svg" width="55px" id="ball" />
+    </div>
+
     <br />
     <br />
     <button onclick="location.href='../index.html'">🔙 Go back</button>
     <script>
       const ball = document.querySelector("img");
       const field = document.getElementById("field");
-      const ballPosition = ball.getBoundingClientRect();
-      console.log(ballPosition);
       document.body.addEventListener("click", function (event) {
         if (field.contains(event.target)) {
-          console.log("on the field");
+          const fieldData = field.getBoundingClientRect();
+          let ballLeft =
+            event.clientX - fieldData.left - ball.offsetWidth / 2 - 10;
+          let ballTop =
+            event.clientY - fieldData.top - ball.offsetHeight / 2 - 10;
+          if (ballLeft < 0) ballLeft = 0;
+          if (ballTop < 0) ballTop = 0;
+          if (ballLeft + ball.clientWidth > field.clientWidth) {
+            ballLeft = field.clientWidth - ball.clientWidth;
+          }
+          if (ballTop + ball.clientHeight > field.clientHeight) {
+            ballTop = field.clientHeight - ball.clientHeight;
+          }
+          ball.style.position = "relative";
+          ball.style.left = `${ballLeft}px`;
+          ball.style.top = `${ballTop}px`;
+          danger.style.display = "none";
         } else {
-          console.log("not on field");
+          let danger = document.getElementById("danger");
+          danger.style.display = "inline";
         }
       });
     </script>
