@@ -26,9 +26,13 @@ function singleSelect(li) {
 function success() {
   let success_screen = document.querySelectorAll(".thanks");
   let rating_screen = document.querySelectorAll(".rating");
-  success_screen[0].style.display = "block";
-  rating_screen[0].style.display = "none";
   result.innerHTML = selectedValue;
+  if (selectedValue == undefined) {
+    alert("You must select a choice first");
+  } else {
+    success_screen[0].style.display = "block";
+    rating_screen[0].style.display = "none";
+  }
 }
 
 let link = document.querySelectorAll("a");
