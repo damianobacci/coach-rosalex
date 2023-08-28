@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import "./App.css";
 
 import { useState } from "react";
@@ -35,7 +35,7 @@ function App() {
   return (
     <div>
       <header>
-        <img src="react-logo-xs.png" alt="React logo" />
+        <img src={logo} alt="Unseen64 logo" />
         <div>
           <h1>Unseen64</h1>
           <p>The greatest website about beta videogames</p>
@@ -54,19 +54,19 @@ function App() {
             className={activeTab === 1 ? "active" : ""}
             onClick={() => setActiveTab(1)}
           >
-            Core Features
+            Core Sections
           </button>
           <button
             className={activeTab === 2 ? "active" : ""}
             onClick={() => setActiveTab(2)}
           >
-            Related Resources
+            Related Links
           </button>
           <button
             className={activeTab === 3 ? "active" : ""}
             onClick={() => setActiveTab(3)}
           >
-            React VS JS
+            Gekigemu
           </button>
         </menu>
         <div id="tab-content">
