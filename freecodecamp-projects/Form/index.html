@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Exercise</title>
+    <link rel="stylesheet" href="/Form/styles.css" />
+  </head>
+  <body>
+    <form action="" id="survey-form">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <label for="name" id="name-label"
+        >Name
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Insert your name..."
+          required
+      /></label>
+      <label for="email" id="email-label"
+        >Email
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Insert your email..."
+          required
+      /></label>
+      <label for="number" id="number-label">
+        Age (optional)
+        <input
+          type="number"
+          name=""
+          id="number"
+          min="18"
+          max="100"
+          placeholder="Age..."
+      /></label>
+      <label for="dropdown">
+        Which option best describes your current role?
+        <select name="dropdown" id="dropdown">
+          <option disabled selected value>Select your current role</option>
+          <option value="Student">Student</option>
+          <option value="Unemployed">Unemployed</option>
+          <option value="Full-time job">Full-time job</option>
+        </select>
+      </label>
+      <label for="option">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="option"
+          ><input type="radio" name="option" id="" value="Yes" />Yes</label
+        >
+        <label for="option"
+          ><input type="radio" name="option" id="" value="No" />No</label
+        ></label
+      >
+      <label for="multiples" id="survey-form">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label for=""
+          ><input type="checkbox" name="multiples" id="" value="5" />Front-end
+          Projects</label
+        ><label for=""
+          ><input type="checkbox" name="multiples" id="" value="0" />Back-end
+          Projects</label
+        ><label for=""
+          ><input type="checkbox" name="multiples" id="" value="1" />Data
+          Visualization</label
+        ><label for=""
+          ><input
+            type="checkbox"
+            name="multiples"
+            id=""
+            value="2"
+          />Challenges</label
+        ><label for=""
+          ><input type="checkbox" name="multiples" id="" value="3" />Open Source
+          Community </label
+        ><label for=""
+          ><input type="checkbox" name="multiples" id="" value="4" />Gitter help
+          rooms</label
+        ></label
+      >
+      <label for="textarea"
+        ><p>Any comments or suggestions?</p>
+        <textarea
+          name="textarea"
+          id="textarea"
+          rows="5"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </label>
+      <input type="submit" id="submit" value="SUBMIT" />
+    </form>
+  </body>
+</html>
