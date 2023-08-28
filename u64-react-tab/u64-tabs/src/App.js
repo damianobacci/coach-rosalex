@@ -5,28 +5,13 @@ import { useState } from "react";
 
 const content = [
   [
-    "React is extremely popular",
-    "It makes building complex, interactive UIs a breeze",
-    "It's powerful & flexible",
-    "It has a very active and versatile ecosystem",
+    "Very cool website",
+    "Incredible archive",
+    "Fun people, Indian links hidden through the website",
   ],
-  [
-    "Components, JSX & Props",
-    "State",
-    "Hooks (e.g., useEffect())",
-    "Dynamic rendering",
-  ],
-  [
-    "Official web page (react.dev)",
-    "Next.js (Fullstack framework)",
-    "React Native (build native mobile apps with React)",
-  ],
-  [
-    "Vanilla JavaScript requires imperative programming",
-    "Imperative Programming: You define all the steps needed to achieve a result",
-    "React on the other hand embraces declarative programming",
-    "With React, you define the goal and React figures out how to get there",
-  ],
+  ["Beta & Cancelled Video Games", "Videos", "How to Help", "Yota"],
+  ["Hidden Palace", "Assemblergames", "The Changing Light at Sandover"],
+  ["Se stai vedendo questo video...", "LoveDeLic", "Napo"],
 ];
 
 function App() {
