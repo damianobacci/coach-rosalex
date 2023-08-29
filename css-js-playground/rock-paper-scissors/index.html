@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors game</title>
     <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <h1 class="title">
@@ -15,9 +16,15 @@
     </section>
     <section class="your choice">
       <h2>Your choice: <span id="your-choice"></span></h2>
-      <button id="Rock">Rock</button>
-      <button id="Paper">Paper</button>
-      <button id="Scissors">Scissors</button>
+      <button class="btn" id="Rock">
+        <img id="Rock" src="https://placehold.co/50x50" /> Rock
+      </button>
+      <button class="btn" id="Paper">
+        <img id="Paper" src="https://placehold.co/50x50" /> Paper
+      </button>
+      <button class="btn" id="Scissors">
+        <img id="Scissors" src="https://placehold.co/50x50" /> Scissors
+      </button>
     </section>
     <section class="result">
       <h2>Result: <span id="result"></span></h2>

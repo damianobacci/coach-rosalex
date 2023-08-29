@@ -1,0 +1,16 @@
+img {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.btn {
+  width: 80px;
+  background-color: wheat;
+  border: 2px solid black;
+  color: black;
+  padding: 5px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 8px;
+}

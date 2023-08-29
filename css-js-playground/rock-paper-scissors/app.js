@@ -4,6 +4,7 @@ const resultDisplay = document.getElementById("result");
 const possibleChoices = document.querySelectorAll("button");
 
 let randomMove;
+let myChoice;
 
 function generateComputerChoice() {
   const MOVES = ["Rock", "Paper", "Scissors"];
@@ -27,13 +28,17 @@ function determineWin() {
   }
 }
 
-let myChoice;
 possibleChoices.forEach((choice) =>
   choice.addEventListener("click", (e) => {
     resultDisplay.innerHTML = "";
-    myChoice = e.target.id;
-    yourChoiceDisplay.innerHTML = myChoice;
-    generateComputerChoice();
-    determineWin();
+    resultDisplay.innerHTML = "Ready...";
+    yourChoiceDisplay.innerHTML = "";
+    computerChoiceDisplay.innerHTML = "";
+    setTimeout(() => {
+      myChoice = e.target.id;
+      yourChoiceDisplay.innerHTML = myChoice;
+      generateComputerChoice();
+      determineWin();
+    }, 3000);
   })
 );
