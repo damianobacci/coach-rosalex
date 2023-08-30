@@ -1,11 +1,17 @@
+body {
+  display: grid;
+  place-items: center;
+}
+
 img {
   display: block;
   margin: 0 auto 10px auto;
+  max-width: 50px;
 }
 
 .btn {
   width: 80px;
-  background-color: wheat;
+  background-color: white;
   border: 2px solid black;
   color: black;
   padding: 5px 5px;
@@ -13,4 +19,9 @@ img {
   cursor: pointer;
   margin: 0 5px;
   border-radius: 8px;
+}
+
+.btn:hover {
+  scale: 1.05;
+  transition: 0.2s;
 }
