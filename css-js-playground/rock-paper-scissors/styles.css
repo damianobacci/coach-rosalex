@@ -24,4 +24,5 @@ img {
 .btn:hover {
   scale: 1.05;
   transition: 0.2s;
+  box-shadow: 4px 2px 30px blue;
 }
