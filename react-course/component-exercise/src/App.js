@@ -38,19 +38,19 @@ function App() {
       ></Header>
       <ul id="concepts">
         <Concept
-          srcImage={componentsImage}
+          srcImage={concepts[0].image}
           altText={concepts[0].title}
           title={concepts[0].title}
           description={concepts[0].description}
         ></Concept>
         <Concept
-          srcImage={componentsImage}
+          srcImage={concepts[1].image}
           altText={concepts[1].title}
           title={concepts[1].title}
           description={concepts[1].description}
         ></Concept>
         <Concept
-          srcImage={componentsImage}
+          srcImage={concepts[2].image}
           altText={concepts[2].title}
           title={concepts[2].title}
           description={concepts[2].description}
