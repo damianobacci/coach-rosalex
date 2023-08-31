@@ -55,3 +55,7 @@ possibleChoices.forEach((choice) =>
     }, 3000);
   })
 );
+
+const botton = document.getElementById("bottone");
+
+botton.addEventListener("click", (Event) => console.log(Event));
