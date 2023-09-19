@@ -1,61 +1,66 @@
 const computerChoiceDisplay = document.getElementById("computer-choice");
-const yourChoiceDisplay = document.getElementById("your-choice");
+const myChoiceDisplay = document.getElementById("my-choice");
 const resultDisplay = document.getElementById("result");
-const possibleChoices = document.querySelectorAll("button");
-const yourScore = document.getElementById("your-score");
+const myScore = document.getElementById("my-score");
 const comScore = document.getElementById("com-score");
+const possibleChoices = document.querySelectorAll("button");
 
 let randomMove;
-let myChoice;
-
-let myCount = 0;
-let comCount = 0;
 
 function generateComputerChoice() {
   const MOVES = ["Rock", "Paper", "Scissors"];
 
   let randomIndex = Math.floor(Math.random() * MOVES.length);
   randomMove = MOVES[randomIndex];
-  computerChoiceDisplay.innerHTML = randomMove;
+  computerChoiceDisplay.style.backgroundImage = "url(" + randomMove + ".png)";
 }
+
+let myChoice;
+let myCount = 0;
+let comCount = 0;
 
 function determineWin() {
   if (myChoice === "Rock" && randomMove === "Scissors") {
-    resultDisplay.innerHTML = "You win!";
+    resultDisplay.innerHTML = "You win<br>!";
     myCount++;
-    yourScore.innerHTML = myCount;
+    myScore.innerHTML = myCount;
   } else if (myChoice === "Paper" && randomMove === "Rock") {
-    resultDisplay.innerHTML = "You win!";
+    resultDisplay.innerHTML = "You win<br>!";
     myCount++;
-    yourScore.innerHTML = myCount;
+    myScore.innerHTML = myCount;
   } else if (myChoice === "Scissors" && randomMove === "Paper") {
-    resultDisplay.innerHTML = "You win!";
+    resultDisplay.innerHTML = "You win<br>!";
     myCount++;
-    yourScore.innerHTML = myCount;
+    myScore.innerHTML = myCount;
   } else if (myChoice === randomMove) {
-    resultDisplay.innerHTML = "Draw!";
+    resultDisplay.innerHTML = "Draw<br>!";
   } else {
-    resultDisplay.innerHTML = "You lose!";
+    resultDisplay.innerHTML = "You lose<br>!";
     comCount++;
     comScore.innerHTML = comCount;
   }
 }
 
+let isProcessing = false;
+
+function resetGame() {
+  isProcessing = false;
+  possibleChoices.forEach((choice) => (choice.disabled = false));
+}
+
 possibleChoices.forEach((choice) =>
-  choice.addEventListener("click", (e) => {
+  choice.addEventListener("click", (event) => {
+    isProcessing = true;
+    possibleChoices.forEach((choice) => (choice.disabled = true));
     resultDisplay.innerHTML = "";
-    resultDisplay.innerHTML = "Ready...";
-    yourChoiceDisplay.innerHTML = "";
-    computerChoiceDisplay.innerHTML = "";
+    resultDisplay.innerHTML = "Ready<br>...";
+    myChoiceDisplay.style.backgroundImage = "url(" + event.target.id + ".png)";
+    computerChoiceDisplay.style.backgroundImage = "url(question.png)";
     setTimeout(() => {
-      myChoice = e.target.id;
-      yourChoiceDisplay.innerHTML = myChoice;
+      myChoice = event.target.id;
       generateComputerChoice();
       determineWin();
+      resetGame();
     }, 3000);
   })
 );
-
-const botton = document.getElementById("bottone");
-
-botton.addEventListener("click", (Event) => console.log(Event));
