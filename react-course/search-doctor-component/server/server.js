@@ -52,6 +52,7 @@ const doctors = [...Array(100).keys()].map((id) => {
     name: chance.name({ nationality: "en" }),
     profession: professions[Math.floor(Math.random() * professions.length)],
     address: chance.address(),
+    city: chance.city({ country: "us" }),
     phone: chance.phone({ country: "us" }),
   };
 });
