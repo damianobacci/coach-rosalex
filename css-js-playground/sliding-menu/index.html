@@ -17,22 +17,57 @@
     <h1 class="title">⬇️ Sliding menu</h1>
     <p class="subtitle">Create a menu that opens/collapses on click:</p>
 
-    <div class="subtitle" id="menu">
-      <span id="title">▶▼ Sweeties (click me)!</span>
+    <div id="sweeties" class="menu">
+      <span class="title">Sweeties (click me)!</span>
       <ul>
-        <li>- Cake</li>
-        <li>- Donut</li>
-        <li>- Honey</li>
+        <li>Cake</li>
+        <li>Donut</li>
+        <li>Honey</li>
       </ul>
     </div>
     <button onclick="location.href='../index.html'">🔙 Go back</button>
     <script>
-      const handler = document.getElementById("handler");
-      const closed = document.getElementById("closed");
-      const open = document.getElementById("open");
-      const menu = document.getElementById("menu");
-      function menuHandler() {}
-      handler.addEventListener("click");
+      const clickText = document.getElementById("title");
+
+      function changeText() {
+        clickText.innerHTML = "";
+      }
+
+      clickText.addEventListener("click", changeText);
+    </script>
+    <style>
+      .menu ul {
+        margin: 0;
+        padding-left: 20px;
+        display: none;
+      }
+
+      .menu .title {
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .menu .title::before {
+        content: "▶ ";
+        font-size: 80%;
+        color: green;
+      }
+
+      .menu.open .title::before {
+        content: "▼ ";
+      }
+
+      .menu.open ul {
+        display: block;
+      }
+    </style>
+    <script>
+      let menuElem = document.getElementById("sweeties");
+      let titleElem = menuElem.querySelector(".title");
+
+      titleElem.addEventListener("click", () =>
+        menuElem.classList.toggle("open")
+      );
     </script>
   </body>
 </html>
