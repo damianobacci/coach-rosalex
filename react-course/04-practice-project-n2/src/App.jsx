@@ -1,7 +1,6 @@
 import AddUser from "./Components/AddUser";
 import "./main.css";
 import Card from "./Components/UI/Card";
-import ErrorModal from "./Components/ErrorModal";
 import UsersList from "./Components/UsersList";
 import { useState } from "react";
 
@@ -23,7 +22,6 @@ function App() {
         {users.length == 0 && <div>No users data</div>}
         {users.length > 0 && <UsersList users={users} />}
       </Card>
-      {users.length == 0 && <ErrorModal></ErrorModal>}
     </>
   );
 }
