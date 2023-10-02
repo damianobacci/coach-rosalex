@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const AddUser = (props) => {
   const [username, setUsername] = useState("");
-  const [age, setAge] = useState(0);
+  const [age, setAge] = useState("");
   const [showModal, setShowModal] = useState(false);
 
   const usernameHandler = (event) => {
@@ -16,12 +16,12 @@ const AddUser = (props) => {
   };
   const formHandler = (event) => {
     event.preventDefault();
-    if (age < 18) {
+    if (Number(age) < 18) {
       setShowModal(true);
-    } else if (username == "") {
+    } else if (username.trim().length === 0) {
       setShowModal(true);
     }
-    if (age === 0 || username == "") {
+    if (Number(age).trim().length === 0 || username.trim().length === 0) {
       return;
     }
     props.onAddUser({
@@ -29,6 +29,8 @@ const AddUser = (props) => {
       age: +age,
       id: Math.random().toString(),
     });
+    setUsername("");
+    setAge("");
   };
 
   const formCloserHandler = () => {
@@ -58,7 +60,7 @@ const AddUser = (props) => {
           />
         </p>
       </div>
-      <Button>Add User</Button>
+      <Button type={"submit"}>Add User</Button>
 
       {showModal && (
         <ErrorModal

@@ -1,4 +1,5 @@
 import styles from "./ErrorModal.module.css";
+import Button from "./UI/Button";
 
 const ErrorModal = (props) => {
   return (
@@ -9,7 +10,9 @@ const ErrorModal = (props) => {
         </div>
         <div className={styles.content}>{props.content}</div>
         <div className={styles.actions}>
-          <button onClick={props.onClose}>Close</button>
+          <Button onClick={props.onClose} type={"button"}>
+            Close
+          </Button>
         </div>
       </div>
     </div>

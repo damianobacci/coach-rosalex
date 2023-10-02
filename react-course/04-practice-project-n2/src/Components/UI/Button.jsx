@@ -2,7 +2,11 @@ import styles from "./Button.module.css";
 
 const Button = (props) => {
   return (
-    <button type="submit" className={styles.button}>
+    <button
+      onClick={props.onClick}
+      type={props.type || "button"}
+      className={styles.button}
+    >
       {props.children}
     </button>
   );
