@@ -15,7 +15,7 @@ const Counter = () => {
   }, [hour, minute, second]);
 
   const timeSetter = () => {
-    if (second > 0) {
+    if (second < 59) {
       setSecond((prevSecond) => prevSecond - 1);
     } else if (minute > 0) {
       setMinute((prevMinute) => prevMinute - 1);
