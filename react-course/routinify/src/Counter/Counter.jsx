@@ -39,6 +39,7 @@ const Counter = () => {
     if (intervalId) {
       clearInterval(intervalId);
       setIntervalId(null);
+      setMinute(0);
     }
   };
 
