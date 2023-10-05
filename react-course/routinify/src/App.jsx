@@ -1,10 +1,18 @@
 import "./App.css";
-import Counter from "./Counter/Counter";
+import CountdownList from "./Counter/CoutdownList";
 
 function App() {
   return (
     <>
-      <Counter></Counter>
+      <header>
+        <h1>Routinify your health</h1>
+      </header>
+      <section>
+        While you are working is hard to keep tracks of many things. Routinify
+        your health with these simple timers. You can add other timers if you
+        prefer.
+      </section>
+      <CountdownList />
     </>
   );
 }
