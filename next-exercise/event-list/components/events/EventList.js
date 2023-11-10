@@ -2,13 +2,11 @@ import EventItem from "./EventItem";
 
 const EventList = ({ items }) => {
   return (
-    <>
-      <ul>
-        {items.map((item) => (
-          <EventItem />
-        ))}
-      </ul>
-    </>
+    <ul>
+      {items.map((item) => (
+        <EventItem />
+      ))}
+    </ul>
   );
 };
 
